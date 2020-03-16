@@ -1,21 +1,21 @@
 intents:
-  - intent_seriousness
-  - intent_aboutcorona
-  - intent_survival_rate
-  - intent_symptoms
-  - intent_spread
-  - intent_recovery
-  - intent_treatment
-  - intent_prevention
-  - intent_actions_on_symptoms
-  - intent_stop_spread
-  - intent_nepal_current_state
-  - intent_nepal_current_state_lab_deficiency
-  - intent_ask_about_own_symptoms
-  - intent_cost_for_treatment
-  - intent_spread_from_pet
-  - intent_question_truth_about_nepal
-  - intent_false_report_about_nepal 
+  - corona_seriousness
+  - corona_aboutcorona
+  - corona_survival_rate
+  - corona_symptoms
+  - corona_spread
+  - corona_recovery
+  - corona_treatment
+  - corona_prevention
+  - corona_actions_on_symptoms
+  - corona_stop_spread
+  - corona_nepal_current_state
+  - corona_nepal_current_state_lab_deficiency
+  - corona_ask_about_own_symptoms
+  - corona_cost_for_treatment
+  - corona_spread_from_pet
+  - corona_question_truth_about_nepal
+  - corona_false_report_about_nepal 
 
 
 
@@ -38,27 +38,19 @@ actions:
   - utter_question_truth_about_nepal
   - utter_false_report_about_nepal 
 
-  responses: 
-
+  templates: 
    utter_seriousness:
-
-    - text: नयाँ रोग भएकाले डर लाग्नु स्वभाविक हो । तर यस बाट डराउने भन्दा साबधानी अपनाउनु राम्रो हो ।
-
-यो रोग लागेको ८० प्रतिशत मान्छेहरु आफैं निको हुन्छन् भन्ने थाहा पाउन जरुरी छ ।
-
-अलि कडा खालको रोग ६० वर्ष भन्दा माथी उमेरका मानिसहरु, चिनी रोग्, हाई ब्लड प्रेसर का बिरामिहरुलाई बढी लाग्छ ।
+    - text: नयाँ रोग भएकाले डर लाग्नु स्वभाविक हो । तर यस बाट डराउने भन्दा साबधानी अपनाउनु राम्रो हो । यो रोग लागेको ८० प्रतिशत मान्छेहरु आफैं निको हुन्छन् भन्ने थाहा पाउन जरुरी छ ।
+    अलि कडा खालको रोग ६० वर्ष भन्दा माथी उमेरका मानिसहरु, चिनी रोग्, हाई ब्लड प्रेसर का बिरामिहरुलाई बढी लाग्छ ।
   
    utter_aboutcorona:
     - text: अहिले बिश्वमा फैलिरहेको कोरोना भाइरस एउटा नयाँ प्रकारको भाइरस हो जसको कारण कोभिड-१९ भन्ने रोग लाग्दछ । यो रोग बिश्वमा पहिलो पटक करीब तीन महिना अगाडी चीनको एउटा शहरमा देखिएको थियो। 
 
-  
    utter_survival_rate:
     - text: हाल सम्मको तथ्याङ्क अनुसार यो रोग लागेकाहरु मध्ये जम्मा २-२.५ प्रतिशतको मृत्यु हुन्छ । यसको अर्थ १०० जनालाई रोगको लागेको छ भने करीब ९७-९८ जनालाई निको हुन्छ ।
   
-
    utter_symptoms:
-    - text: यो रोगको लक्षणहरु मौसमी रुघा-खोकी लाग्दा देखिने लक्षणहरु जस्तो नै हुन्छ । यसको मुख्य लक्षणहरु भन्नु पर्दा: ज्वरो आउनु र ज्वरोसँग सुख्खा खोकी लाग्नु या सास फेर्न गार्हो हुनु हो । 
-
+    - text: यो रोगको लक्षणहरु मौसमी रुघा-खोकी लाग्दा देखिने लक्षणहरु जस्तो नै हुन्छ । यसको मुख्य लक्षणहरु भन्नु पर्दा: ज्वरो आउनु र ज्वरोसँग सुख्खा खोकी लाग्नु या सास फेर्न गार्हो हुनु हो ।
 
    utter_spread:
     - text: संक्रमित व्यक्तिले खोक्दा, हाच्छियु गर्दा वा बोल्दा निस्किने थुक वा खकारको छिटाबाट ra संक्रमित व्यक्तिको सम्पर्कमा आएको चिजबिज छुँदा । 
@@ -138,10 +130,4 @@ actions:
 कुन जिल्लामा कति शंकास्पद बिरामी भेटिएका छन भन्ने कुराको आधिकारिक रूपमा सुचना निकाल्ने गरिएको छैन। त्यसैले यस प्रश्नको उत्तर दिन हामी असमर्थ छौ।
 
 यदि यस कुरामा मानिसको धेरै चाँसो भयो भने भविष्यमा यस सम्बन्धि जानकारी उपलब्ध गराउन हामी प्रयास गर्नेछौ । तर हालका लागि भने हामीसँग यो जानकारी छैन।
-
-
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
 
